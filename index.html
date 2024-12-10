@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+   <title>Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+<input type="text" class="kisii" placeholder="enter your logins" id="first">
+<input type="text" class="kisii" placeholder="enter your logins" id="second"><br>
+<a href="#"><button onclick="myfun()">log in</button></a>
+<div id="s">00</div>
+    </div>
+</body>
+
+<script>
+    function myfun(){
+        var first = parseInt(document.getElementById("first").value)
+        var second = parseInt(document.getElementById("second").value)
+        var sum = first+second
+        document.getElementById("s").innerHTML=sum
+    }
+</script>
+</html>
